@@ -126,7 +126,7 @@ a.spectra-link{
 /* fonts and title */
 .spectra-title {
   font-family: "Spectra";
-  font-size: 65px;
+  font-size: 4.0625rem;
   line-height: 124%;
 }
 h1,
@@ -136,28 +136,31 @@ h3 {
   margin-bottom: 0;
 }
 .text-62 {
-  font-size: 62px;
+  font-size: 3.875rem;
 }
 .text-52 {
-  font-size: 52px;
+  font-size: 3.25rem; 
 }
 .text-48 {
-  font-size: 48px;
+  font-size: 3rem;
 }
 .text-40 {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 .text-24 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .text-20 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .text-16 {
   font-size: 16px;
 }
 .text-14 {
   font-size: 14px;
+}
+@media(max-width:768px){
+    
 }
 /* font-weights */
 .fw-300 {
@@ -244,4 +247,35 @@ select {
 }
 .input-wrapper input::placeholder{
     color: #B7B4B4;
+}
+
+/* Fixing owl nav */
+.plans-carousel .owl-nav.disabled{
+    display: block !important;
+    background-color: unset;
+}
+.plans-carousel .owl-nav [class*=owl-]{
+    background: none !important;
+    color: unset;
+    filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.16));
+    position: absolute;
+
+}
+.plans-carousel .owl-nav .owl-prev img{
+    width: 100%;
+}
+.plans-carousel .owl-nav .owl-next img{
+    transform: rotate(180deg);
+    transform-origin: center;
+    width: 100%;
+}
+.plans-carousel .owl-nav .owl-next{
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1%;
+}
+.plans-carousel .owl-nav .owl-prev{
+    top: 50%;
+    transform: translateY(-50%);
+    left: -4%;
 }

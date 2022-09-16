@@ -3,20 +3,27 @@ section.hero-section {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  padding: 78px 86px 126px 171px;
+  padding: 4.875rem 5.375rem 7.875rem 10.6875rem;
+  position: relative;
+}
+section.hero-section::before{
+    position: absolute;
+    content: url("../assets/img/hero-bg-elements.png");
+    left: 0;
+    top:10%;
 }
 section.hero-section .content-left {
-  max-width: 400px;
+  max-width: 25rem;
 }
 section.interested-form{
-    padding: 66px 72px 66px 86px;
+    padding: 4.125rem 4.5rem 4.125rem 5.375rem;
     background-color: var(--color-spectra-blue);
     
 }
 
 section.interested-form .content-left .info-item{
  padding-bottom: 13%;
- border-bottom: 1px solid white;
+ border-bottom: .0625rem solid white;
  margin-bottom: 17%;
  padding-right: 25%;
  color: white;
@@ -27,36 +34,36 @@ section.interested-form .content-left .info-item:last-child{
     padding-bottom: 0%;
 }
 section.interested-form .content-right{
-    /* max-width: 600px; */
-    padding: 56px 50px;
+    /* max-width: 37.5rem; */
+    padding: 3.5rem 3.125rem;
     background-color: white;
 }
 section.features{
-    padding: 70px 86px;
+    padding: 4.375rem 5.375rem;
 }
 section.features .features-item{
-    margin-right: 10px;
+    margin-right: .625rem;
 }
 section.harness-power{
-    padding: 56px 86px;
+    padding: 3.5rem 5.375rem;
     background-color: var(--color-spectra-violet);
 }
 section.contact-us{
     background-color: black;
-    padding: 56px 86px;
+    padding: 3.5rem 5.375rem;
 }
 section.faqs{
     background-color: var(--color-gray-blue);
-    padding: 72px 86px;
+    padding: 4.5rem 5.375rem;
 }
 .spectra-accordion .accordion-item{
     background: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 .spectra-accordion .accordion-item .accordion-button{
     background:transparent;
-    border-bottom: 1px solid var(--color-gray-97);
-    font-size: 18px;
+    border-bottom: .0625rem solid var(--color-gray-97);
+    font-size: 1.125rem;
     color: #333333;
     padding-bottom: 1.6rem;
 }
@@ -76,39 +83,54 @@ section.faqs{
     transform: none;
 }
 section.our-clients .client-logo{
-    height: 100px;
+    height: 6.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 section.our-clients .client-logo img{
-    width: min(120px, 80%);
+    width: min(7.5rem, 80%);
+}
+section.plans{
+    padding-bottom: 3.875rem;
+    padding-inline: 3.125rem;
+    position: relative;
+    padding-top: 15%;
+}
+section.plans .leased-line-title{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding-top: 6.6%;
+    padding-bottom: 14.9%;
 }
 section.plans .plan-card{
     width: 100%;
-    max-width: 434px;
-    padding: 10px;
+    max-width: 27.125rem;
+    padding: .625rem;
     background-color: white;
-    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.08);
-    border: 1px solid black;
+    box-shadow: .5rem .5rem 0rem 0rem rgba(0, 0, 0, 0.08);
+    border: .0625rem solid black;
 
 }
 section.plans .plan-card .plan-header{
     background: var(--gradient-spectra-violet);
     color: white;
-    padding: 20px 30px;
+    padding: 1.25rem 1.875rem;
 }
 section.plans .plan-card .plan-body{
-    padding: 34px 30px;
+    padding: 2.125rem 1.875rem;
 }
 section.plans .plan-card .plan-body .divider{
-    height: 1px;
+    height: .0625rem;
     width: 100%;
     background-color: var(--color-light-gray);
 }
 /*navbar*/
 .nav-item {
-  padding-left: 40px;
+  padding-left: 2.5rem;
 }
 .navbar-brand {
   background-color: black;
@@ -122,41 +144,41 @@ section.plans .plan-card .plan-body .divider{
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .secondary-navbar {
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 1.1875rem;
+  padding-bottom: 1.1875rem;
 }
 /*navbar end*/
 
 /* Footer */
 .footer-top {
-  padding: 100px 0px 50px 0px;
+  padding: 6.25rem 0rem 3.125rem 0rem;
 }
 .footer .intro {
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
-@media (max-width: 995px) {
+@media (max-width: 62.1875rem) {
   .footer .intro {
-    padding-left: 10px;
+    padding-left: .625rem;
   }
 }
 .footer .intro .title {
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
-  padding-bottom: 20px;
+  font-size: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .intro p {
-  padding-top: 18px;
+  padding-top: 1.125rem;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  padding-bottom: 10px;
+  font-size: .875rem;
+  padding-bottom: .625rem;
 }
 .footer .icons img {
-  padding-right: 18px;
+  padding-right: 1.125rem;
   cursor: pointer;
 }
 .footer .links .title {
@@ -164,18 +186,18 @@ section.plans .plan-card .plan-body .divider{
   font-weight: bold;
   font-size: 0.875rem;
   font-family: "Helvetica Neue";
-  padding-bottom: 16px;
+  padding-bottom: 1rem;
   position: relative;
 }
 .footer .links .title::after {
   content: "";
-  height: 1px;
+  height: .0625rem;
   width: 80%;
   background-color: #fff;
   opacity: 0.2;
   position: absolute;
   bottom: 0;
-  left: -2px;
+  left: -0.125rem;
 }
 .footer .links a {
   font-style: normal;
@@ -183,28 +205,28 @@ section.plans .plan-card .plan-body .divider{
 
   font-size: 0.875rem;
   font-family: "Helvetica Neue";
-  font-size: 14px;
+  font-size: .875rem;
   color: white;
   opacity: 0.8;
-  padding-bottom: 14px;
+  padding-bottom: .875rem;
   display: block;
   text-decoration: none;
 }
 .footer-bottom {
-  padding-bottom: 10px;
+  padding-bottom: .625rem;
 }
 .footer-bottom .left-side {
   text-align: left;
   font-size: 0.875rem;
   color: rgb(255 255 255 / 50%) !important;
 }
-@media (max-width: 995px) {
+@media (max-width: 62.1875rem) {
   .footer-bottom .left-side {
-    padding-right: 45px;
+    padding-right: 2.8125rem;
   }
 }
 .footer-bottom .left-side span {
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 .footer-bottom .right-side {
   text-align: center;
@@ -227,17 +249,63 @@ section.plans .plan-card .plan-body .divider{
   font-size: 0.875rem;
   font-family: "Helvetica Neue";
   color: #f56b6b !important;
-  padding-bottom: 14px;
+  padding-bottom: .875rem;
   display: block;
   text-decoration: none;
 }
 .footer-bottom .chat-box {
   background: white;
   color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: .625rem;
+  padding-bottom: .625rem;
 }
 .footer-bottom .chat-box img {
-  width: 30px;
+  width: 1.875rem;
 }
 /*Footer End */
+
+/* Responsive styling */
+@media(max-width:48rem){
+    html{
+        font-size: .75rem;
+    }
+    .text-62{
+        font-size: 2.6rem;
+    }
+    .text-40{
+        font-size: 1.5rem;
+    }
+    section{
+        padding: 1.25rem 1.875rem !important;
+    }
+    section.plans{
+        padding-top: 15% !important;
+    }
+    section.interested-form .content-left .info-item{
+        padding-right: unset;
+    }
+    section.interested-form .content-right{
+        margin-top: 2.5rem;
+        padding-inline: 2rem;
+    }
+    section.features .features-item{
+        margin-bottom: 1.25rem;
+    }
+    section.features .features-item h3{
+        margin-bottom: 1.3rem !important;
+    }
+    .plans-carousel .owl-nav [class*=owl-]{
+        width: 50px;
+    }
+    .plans-carousel .owl-nav .owl-next{
+        right: 0px;
+    }
+    .plans-carousel .owl-nav .owl-prev{
+        left: -30px;
+    }
+}
+@media(max-width:600px) {
+    section.plans .plans-carousel{
+        padding-top: 21%;
+    }
+}
