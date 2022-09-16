@@ -11,16 +11,15 @@ section.hero-section .content-left {
 section.interested-form{
     padding: 66px 72px 66px 86px;
     background-color: var(--color-spectra-blue);
-    color: white;
+    
 }
-section.interested-form .content-left{
-    max-width: 472px;
-}
+
 section.interested-form .content-left .info-item{
  padding-bottom: 13%;
  border-bottom: 1px solid white;
  margin-bottom: 17%;
  padding-right: 25%;
+ color: white;
 }
 section.interested-form .content-left .info-item:last-child{
     border-bottom: none;
@@ -28,10 +27,84 @@ section.interested-form .content-left .info-item:last-child{
     padding-bottom: 0%;
 }
 section.interested-form .content-right{
-    max-width: 600px;
+    /* max-width: 600px; */
     padding: 56px 50px;
     background-color: white;
-    color: black;
+}
+section.features{
+    padding: 70px 86px;
+}
+section.features .features-item{
+    margin-right: 10px;
+}
+section.harness-power{
+    padding: 56px 86px;
+    background-color: var(--color-spectra-violet);
+}
+section.contact-us{
+    background-color: black;
+    padding: 56px 86px;
+}
+section.faqs{
+    background-color: var(--color-gray-blue);
+    padding: 72px 86px;
+}
+.spectra-accordion .accordion-item{
+    background: transparent;
+    margin-bottom: 20px;
+}
+.spectra-accordion .accordion-item .accordion-button{
+    background:transparent;
+    border-bottom: 1px solid var(--color-gray-97);
+    font-size: 18px;
+    color: #333333;
+    padding-bottom: 1.6rem;
+}
+.spectra-accordion .accordion-item .accordion-button:focus{
+    box-shadow: none;
+}
+.spectra-accordion .accordion-item .accordion-button::after{
+    background-image: none;
+    content: '-';
+}
+.spectra-accordion .accordion-item .accordion-button.collapsed::after{
+    content: '+';
+    background-image: none;
+    transform: none;
+}
+.accordion-button:not(.collapsed)::after{
+    transform: none;
+}
+section.our-clients .client-logo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.our-clients .client-logo img{
+    width: min(120px, 80%);
+}
+section.plans .plan-card{
+    width: 100%;
+    max-width: 434px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.08);
+    border: 1px solid black;
+
+}
+section.plans .plan-card .plan-header{
+    background: var(--gradient-spectra-violet);
+    color: white;
+    padding: 20px 30px;
+}
+section.plans .plan-card .plan-body{
+    padding: 34px 30px;
+}
+section.plans .plan-card .plan-body .divider{
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-light-gray);
 }
 /*navbar*/
 .nav-item {

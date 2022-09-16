@@ -3,6 +3,12 @@
   --color-gray-blue: #d9e2ec;
   --color-yellow: #fec66f;
   --color-spectra-blue: #47a8c5;
+  --color-light-gray: #808080;
+  --color-gray-97: #979797;
+  --color-spectra-violet: #8C78B280;
+  --gradient-spectra-violet: linear-gradient(96.34deg, #8C78B2 0%, #6E4BAF 100%);
+  --gradient-spectra-blue:linear-gradient(96.14deg, #6889B1 -2.94%, #4B78AF 100%);
+  --gradient-spectra-green:linear-gradient(96.34deg, #6ABEC1 0%, #43B0B4 100%);
 }
 
 /* Gloabl styles */
@@ -15,6 +21,7 @@ body {
   font-weight: 400;
   font-style: normal;
   line-height: 133%;
+  color: black;
 }
 
 @font-face {
@@ -90,6 +97,13 @@ body {
   font-display: swap;
 }
 
+/* link1 */
+a.spectra-link{
+    display: block;
+    font-weight: 300;
+    font-size: 16px;
+    color: var(--color-spectra-blue);
+}
 /* color utility classes */
 .bg-black {
   background-color: black;
@@ -99,8 +113,14 @@ body {
 .bg-black a {
   color: white !important;
 }
+.text-color-white{
+    color: white;
+}
 .text-color-yellow {
   color: var(--color-yellow);
+}
+.text-color-light-gray{
+    color: var(--color-light-gray);
 }
 
 /* fonts and title */
@@ -146,6 +166,10 @@ h3 {
 .fw-500 {
   font-weight: 500;
 }
+/* line height */
+.line-height-200{
+    line-height: 200%;
+}
 /* spacing, margin and padding */
 .margin-bottom-20 {
   margin-bottom: 20px;
@@ -155,6 +179,18 @@ h3 {
 }
 .margin-bottom-36 {
   margin-bottom: 36px;
+}
+.margin-bottom-44{
+    margin-bottom: 44px;
+}
+.margin-bottom-70{
+    margin-bottom: 70px;
+}
+.margin-right-50{
+    margin-right: 50px;
+}
+.margin-right-10{
+    margin-right: 10px;
 }
 /* button styles */
 button.spectra-btn {
