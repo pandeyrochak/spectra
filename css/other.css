@@ -6,11 +6,14 @@ section.hero-section {
   padding: 4.875rem 5.375rem 7.875rem 10.6875rem;
   position: relative;
 }
-section.hero-section::before{
+section.hero-section .bg-element{
     position: absolute;
-    content: url("../assets/img/hero-bg-elements.png");
-    left: 0;
+    left: 0%;
     top:10%;
+    width: 30%;
+}
+section.hero-section .bg-element img{
+    width:100%;
 }
 section.hero-section .content-left {
   max-width: 25rem;
@@ -277,6 +280,14 @@ section.plans .plan-card .plan-body .divider{
     }
     section{
         padding: 1.25rem 1.875rem !important;
+    }
+    section.hero-section{
+        padding:4.5rem 4.5rem !important;
+    }
+    section.hero-section .bg-element{
+        left: -1%;
+        
+        width: 20%;
     }
     section.plans{
         padding-top: 15% !important;
